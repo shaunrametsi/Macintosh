@@ -1,0 +1,64 @@
+center-label {
+    background-color: rgba(106, 93, 86, 0.2);
+    margin: 0 30%;
+    text-align: center;
+    font-family: TW Cen MT;
+    color: white;
+    font-weight: 500;
+    display: grid;
+    align-content: flex-end;
+    justify-content: center;
+    height: 80%;
+    font-size: 50px;
+    overflow-wrap: break-word;
+}
+
+header-label{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+header-menu-container:hover > header-label {
+    color: transparent;
+    text-shadow: 0 0 4.5px rgba(0,0,0,0.5);
+}
+
+content-paragraph {
+    padding: 1% 10%;
+    text-align: center;
+    display: inline-grid;
+    grid-template-rows: 2% 98%;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-radius: 10px;
+    padding: 30px 15%;
+    grid-template-rows: 20% 83%;
+    box-shadow: 4px 4px 20px rgba(0,0,0,0.6);
+    grid-row-gap: 2%;
+    transition: all 300ms cubic-bezier(0.000, 0.000, 0.230, 1);
+    top:0;
+}
+
+content-paragraph:hover {
+    background-color: rgba(255, 255, 255, 1);
+    top: -5px;
+    position: relative;
+}
+
+paragraph-1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+
+sentence-1 {
+    padding-top: 10px;
+    width: 100%;
+    border-top: 1px solid;
+    border-color: white;
+}

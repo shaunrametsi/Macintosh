@@ -1,0 +1,33 @@
+html{
+    --background-dark: black;
+    --background-light: white;
+
+    --background-dark-opaq: rgba(0,0,0,0.8);
+    --background-light-opaq: rgba(255,255,255,0.8);
+}
+
+:root {
+    color-scheme: light;
+    --background: var(--background-light);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+     :root {
+      color-scheme: dark;
+      --background: var(--background-dark);
+    }
+  }
+  
+  [color-scheme="light"] {
+    color-scheme: light;
+    --background: var(--background-light);
+  }
+  
+  [color-scheme="dark"] {
+    color-scheme: dark;
+    --background: var(--background-dark);
+  }
+
+  #change-with-css {
+    background: var(--background);
+  }
