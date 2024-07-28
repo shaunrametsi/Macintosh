@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="scripts/style.css"/>
+        <link rel="stylesheet" type="text/css" href="scripts/style-font.css"/>
+        <link rel="stylesheet" type="text/css" href="scripts/style-screen-size.css"/>
+    </head>
+    <body>
+        <header>
+            <macintosh-logo></macintosh-logo>
+            <header-menu-container>
+                <header-label>Macintosh Cross & Farquharson</header-label>
+                <header-menu>
+                    <header-menu-item onclick="goToHome()">Home</header-menu-item>
+                    <header-menu-item onclick="goToAboutUs()">About Us</header-menu-item>
+                    <header-menu-item onclick="goToHistory()">History</header-menu-item>
+                    <header-menu-item onclick="goToServices()">Services</header-menu-item>
+                </header-menu>
+            </header-menu-container>
+            <header-dropdown onclick="toggleMenu()">
+                <header-dropdown-icon></header-dropdown-icon>
+            </header-dropdown>
+        </header>
+        <main-content>
+            <content-header>Our Practice</content-header>
+            <content-paragraph style="margin:10px 7%" >
+                <sentence-1 style="border-top: none; font-size: larger;">
+                    Macintosh Cross and Farquharson, established during 1882, is a renowned and highly respected law firm in Pretoria.
+                    <br>
+                    <br>
+                    We, at Macintosh Cross and Farquharson, are strongly committed to professionalism, integrity, excellence, hard work and providing personal & individualised service to our clients. We are dedicated to maintaining the highest ethical standards and adhere to a culture of service excellence and professionalism.
+                    <br>
+                    <br>
+                    
+                    Over more than 100 years, our firm has developed a reputation as a consistent provider of professional and expert legal assistance. We have tailored legal solutions to a wide variety of clients across our full spectrum of legal disciplines. We focus on our clients’ needs and expectations and in so doing we strive to provide specialised legal solutions that are cognisant of each of our clients individual and unique circumstances.
+
+                </sentence-1>
+            </content-paragraph>
+            <div class="base-container">
+                <main-content>
+                    <content-header>Why us</content-header>
+                    <content-container-3>
+                        <content-paragraph>
+                            <paragraph-2>Experienced Attorneys</paragraph-2>
+                        </content-paragraph>
+                        <content-paragraph>
+                            <paragraph-2>Ability To Stay One Step Ahead</paragraph-2>
+                        </content-paragraph>
+                        <content-paragraph>
+                            <paragraph-2>Knowledge That Can Serve You</paragraph-2>
+                        </content-paragraph>
+                    </content-container>
+                </main-content>
+                <br>
+                <br>
+                <main-content>
+                    <content-header>Our Team</content-header>
+                </main-content>
+                <div class="image-container">
+                    <div class="image-group"></div>
+                    <content-container-2 style="width:100%; padding: 0">
+                        <image-card style="background-image: url(Images/Macintosh_Cross_11_JPG.webp);">
+                            <content-header>Anneke Lötter</content-header>
+                        </image-card>
+                        <image-card style="background-image: url(Images/Macintosh_Cross_13_JPG.webp);">
+                            <content-header>Carrie van der Laan</content-header>
+                        </image-card>
+                        <image-card style="background-image: url(Images/Macintosh_Cross_15_JPG.webp);">
+                            <content-header>Joe Tambwe</content-header>
+                        </image-card>
+                        <image-card style="background-image: url(Images/Macintosh_Cross_16_JPG.webp);">
+                            <content-header>Jonathan Keus</content-header>
+                        </image-card>
+                        <image-card style="background-image: url(Images/Macintosh_Cross_17_JPG.webp);">
+                            <content-header>Teuni Erasmus</content-header>
+                        </image-card>
+                        <image-card style="background-image: url(Images/Macintosh_Cross_18_JPG.webp);">
+                            <content-header>Bronwynne Mouton</content-header>
+                        </image-card>
+                    </content-container-2>
+                </div>
+            </div>
+        </main-content>
+    </body>
+    <footer>
+        <div></div>
+        <div></div>
+    </footer>
+</html>
+<script>
+    function toggleMenu() {
+        let dropdown = document.getElementsByTagName("dropdown-menu")[0];
+        if(dropdown.style.height == '' || dropdown.style.height == '0px'  ){
+            dropdown.setAttribute('style', 'height: 80%');
+        }
+        else{
+            dropdown.setAttribute('style', 'height: 0');
+        }
+    } 
+
+
+    function goToHome(){
+        window.location = "index.html";
+    }
+
+    function goToAboutUs(){
+        window.location = "about.html";
+    }
+
+    function goToHistory(){
+        window.location = "history.html";
+    }
+
+    function goToServices(){
+        window.location = "service.html";
+    }
+</script>

@@ -8,26 +8,27 @@
     </head>
     <body>
         <header>
-            <div class="logo"></div>
+            <macintosh-logo></macintosh-logo>
             <header-menu-container>
                 <header-label>Macintosh Cross & Farquharson</header-label>
                 <header-menu>
-                    <header-menu-item>Home</header-menu-item>
-                    <header-menu-item>About Us</header-menu-item>
-                    <header-menu-item>History</header-menu-item>
-                    <header-menu-item>Services</header-menu-item>
-                    <header-menu-item>Contact Us</header-menu-item>
+                    <header-menu-item onclick="goToHome()">Home</header-menu-item>
+                    <header-menu-item onclick="goToAboutUs()">About Us</header-menu-item>
+                    <header-menu-item onclick="goToHistory()">History</header-menu-item>
+                    <header-menu-item onclick="goToServices()">Services</header-menu-item>
                 </header-menu>
             </header-menu-container>
-            
+            <header-dropdown onclick="toggleMenu()">
+                <header-dropdown-icon></header-dropdown-icon>
+            </header-dropdown>
         </header>
-        <center-image-container>
-            <center-image>
-                <center-image-center>
-                    <center-image-button>OUR SERVICE</center-image-button>
-                </center-image-center>
-            </center-image>
-        </center-image-container>
+        <!-- <dropdown-menu style="visibility: hidden;">
+            <dropdown-menu-item>Home</dropdown-menu-item>
+            <dropdown-menu-item>About Us</dropdown-menu-item>
+            <dropdown-menu-item>History</dropdown-menu-item>
+            <dropdown-menu-item>Services</dropdown-menu-item>
+            <dropdown-menu-item>Contact Us</dropdown-menu-item>
+        </dropdown-menu> -->
         <main-content>
             <content-header>SERVICES</content-header>
             <content-container>
@@ -50,4 +51,36 @@
             </content-container>
         </main-content>
     </body>
+    <footer>
+        <div></div>
+        <div></div>
+    </footer>
 </html>
+<script>
+    function toggleMenu() {
+        let dropdown = document.getElementsByTagName("dropdown-menu")[0];
+        if(dropdown.style.height == '' || dropdown.style.height == '0px'  ){
+            dropdown.setAttribute('style', 'height: 80%');
+        }
+        else{
+            dropdown.setAttribute('style', 'height: 0');
+        }
+    } 
+
+    function goToHome(){
+        window.location = "index.html";
+    }
+
+    function goToAboutUs(){
+        window.location = "about.html";
+    }
+
+    function goToHistory(){
+        window.location = "history.html";
+    }
+
+    function goToServices(){
+        window.location = "service.html";
+    }
+
+</script>
